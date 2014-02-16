@@ -164,7 +164,7 @@
 	$.fn.tagExist = function(val) {
 		var id = $(this).attr('id');
 		var tagslist = $(this).val().split(delimiter[id]);
-		return (jQuery.inArray(val, tagslist) >= 0); //true when tag exists, false when not
+		return (jQuery.inArray(val.toString(), tagslist) >= 0); //true when tag exists, false when not
 	};
 	
 	// clear all existing tags and import new ones from a string
